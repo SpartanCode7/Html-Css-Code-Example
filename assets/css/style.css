@@ -1,0 +1,328 @@
+/* Global Styling */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none !important;
+}
+img {
+    width: 100%;
+}}
+/* Header */
+
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+    background-color: #fff;
+}
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.brand__icon img {
+    width: 250px;
+    height: 82px;
+}
+.primary__nav {
+    display: flex;
+    gap: 33px;
+}
+.primary__nav a {
+    color: #000;
+}
+.login a {
+    background: transparent linear-gradient(106deg, #000 0%, #EA4427 100%) 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    border: 0;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    padding: 5px 42px 8px 42px;
+}
+#Layer_2 {
+  width: 200px;
+}
+
+/* Banner */
+
+.banner {
+    padding-top: 122px;
+    height: 90vh;
+    background: url('../images/banner.jpg');
+    display: flex;
+    align-items: center;
+    background-position: top center;
+}
+.banner__inner {
+    display: flex;
+    justify-content: center;
+}
+.banner__inner form {
+    display: inline-block;
+    padding: 0 6px;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 2px;
+}
+.category {
+    width: 120px;
+    font-size: 12px;
+    height: 29px;
+    border: 0;
+    border-radius: 2px;
+    color: #000;
+    padding: 0 6px;
+}
+.banner__inner form input {
+    height: 29px;
+    border: 0;
+    padding: 4px 6px;
+    font-size: 14px;
+    border-radius: 2px;
+    color: #000;
+    background-color: #E9E9ED;
+}
+.location {
+    width: 300px;
+}
+.submit__button {
+    padding: 2px 21px !important;
+    background: transparent linear-gradient(106deg, #000 0%, #EA4427 100%) 0% 0% no-repeat padding-box;
+    color: #fff !important;
+}
+
+/* For Sell */
+
+#for__sale {
+    padding: 90px 0;
+}
+.for__sale__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    gap: 34px;
+}
+
+/* For sell && For rent Common Styling */
+
+.product__box {
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    background-color: #E9E9ED;
+    padding: 30px 40px;
+    border-radius: 2px;
+}
+.product__box .product__img {
+    width: 100px;
+    margin: 0 auto;
+}
+.product__box h3,
+.product__box p {
+    margin: 0;
+}
+.product__info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.product__price button {
+    font-size: 16px;
+    display: inline-block;
+    padding: 2px 11px;
+    border-radius: 2px;
+    background: transparent linear-gradient(106deg, #000 0%, #EA4427 100%) 0% 0% no-repeat padding-box;
+    border: 0;
+    color: #fff;
+}
+.product__box:hover {
+    background: transparent linear-gradient(106deg, #000 0%, #EA4427 100%) 0% 0% no-repeat padding-box;
+}
+.product__box:hover svg {
+    fill: #fff;
+    cursor: pointer;
+}
+.product__box:hover h3,
+.product__box:hover p {
+    color: #fff;
+    cursor: pointer;
+}
+.product__box:hover button {
+    background: #fff;
+    color: #000;
+}
+
+/* For rent */
+
+#for__rent {
+    background-color: #E9E9ED;
+    padding: 80px 0;
+}
+.for__rent__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    gap: 34px;
+}
+#for__rent h2 {
+    text-align: center;
+    margin-bottom: 35px;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+#for__rent .product__box {
+    background-color: #fff;
+}
+#for__rent .slick-track {
+    display: flex;
+    gap: 17px !important;
+}
+#for__rent .slick-prev::before,
+#for__rent .slick-next::before {
+    opacity: .25;
+    color: #000 !important;
+    font-size: 30px !important;
+}
+#for__rent .product__box {
+    background-color: #fff;
+    display: flex;
+}
+
+/* Footer */
+
+.footer {
+    background: transparent linear-gradient(90deg, #000 30%, #EA4427 100%) 0% 0% no-repeat padding-box;
+    color: #fff;
+    padding: 90px 0;
+}
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: wrap;
+}
+.footer__inner .box {
+    flex: 1 1 0;
+    width: 0;
+}
+.footer__inner .box:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.footer__inner .box h3 {
+    padding-bottom: 15px;
+    font-size: 23px;
+    font-weight: 600;
+}
+.email {
+    border: 0;
+    padding: 6px 10px;
+    color: #000;
+    border-radius: 2px;
+    font-size: 14px;
+    width: 210px;
+}
+.submit {
+    padding: 6px 8px;
+    font-size: 14px;
+    border: 0;
+    border-radius: 0 2px 2px 0px;
+    color: #fff;
+    background: transparent linear-gradient(90deg, #EA4427 -78%, #000 100%) 0% 0% no-repeat padding-box;
+    font-weight: 600;
+}
+.email {
+    border: 0;
+    padding: 6px 10px;
+    color: #000;
+    border-radius: 2px 0px 0px 2px;
+    font-size: 14px;
+    width: 210px;
+    margin-right: -4px;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 1400px) {
+    .for__sale__inner {
+        gap: 22px;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .footer__inner {
+        flex-direction: column;
+        gap: 35px;
+    }
+    .footer__inner .box {
+        width: 50% !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    address {
+        margin-bottom: 0 !important;
+        text-align: center;
+    }
+    .footer__inner .box:nth-child(3) {
+        align-items: center;
+    }
+    .footer__inner .box h3 {
+        padding-bottom: 7px;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .banner__inner form {
+        display: flex !important;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .category {
+        width: 100%;
+    }
+    .product__box {
+        width: 31%;
+        padding: 26px 7px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .product__box {
+        width: 46%;
+        padding: 15px 9px;
+    }
+    .location {
+        width: 100%;
+    }
+    .banner__inner form {
+        width: 100%;
+        margin: 0 30px;
+    }
+    #for__rent .slick-track {
+        gap: 17px !important;
+    }
+    .slick-dotted.slick-slider {
+        margin: 30px auto;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .product__box {
+        width: 100%;
+        padding: 15px 40px;
+    }
+    .product__box {
+        margin: 0 30px;
+    }
+    #for__rent .slick-prev::before, #for__rent .slick-next::before {
+        font-size: 20px !important;
+
+    }
+}
